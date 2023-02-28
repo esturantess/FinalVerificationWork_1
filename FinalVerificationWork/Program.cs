@@ -28,3 +28,9 @@ string[] LeaveElementsOfSpecifiedLengthInArray(string[] array, int size)
     }
     return newArray;
 }
+
+string[] array =  { "собака", "кот", "мышь", "бык", "сова", "як",
+                    "енот", "сыч", "орангутан", "Питер Петтигрю" };
+
+string[] newArray = LeaveElementsOfSpecifiedLengthInArray(array, 3);
+Console.WriteLine("[" + String.Join(", ", newArray) + "]");
